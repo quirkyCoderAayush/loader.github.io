@@ -396,22 +396,22 @@
 
 @keyframes loader8{
     0%{
-        left: 300px;
+        left: 30%;
         transform: rotateY(0deg);
     }
     48%{
-        left: -300px;
+        left: -30%;
         transform: rotateY(0deg);
     }
     52%{
         transform: rotateY(180deg);
     }
     98%{
-        left: 300px;
+        left: 30%;
         transform: rotateY(180deg);
     }
     100%{
-        left: 300px;
+        left: 30%;
     }
 }
 @keyframes loader8a{
