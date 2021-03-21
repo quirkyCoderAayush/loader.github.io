@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     background-color: #111;
+    width: 100%;
     height: 100vh;
 }
 .loader{
@@ -289,10 +290,10 @@
 .loader6 .loader6inner{
     position: absolute;
     border: 4px solid transparent;
-    border-top-color: white;
-    border-bottom-color: white;
+    border-top-color: yellow;
+    border-bottom-color: yellow;
     border-radius: 50%;
-    box-shadow: 0 0 20px blue, 0 0 40px blue;
+    box-shadow: 0 0 10px white, 0 0 20px cyan;
 }
 @keyframes loader6a{
     0%{
@@ -392,9 +393,70 @@
 .parent:nth-child(8){
     background-color: rgb(43, 14, 40);
 }
+
+@keyframes loader8{
+    0%{
+        left: 300px;
+        transform: rotateY(0deg);
+    }
+    48%{
+        left: -300px;
+        transform: rotateY(0deg);
+    }
+    52%{
+        transform: rotateY(180deg);
+    }
+    98%{
+        left: 300px;
+        transform: rotateY(180deg);
+    }
+    100%{
+        left: 300px;
+    }
+}
+@keyframes loader8a{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+}
+@keyframes loader8b{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+}
 .loader8{
     width: 200px;
     height: 200px;
+    animation: loader8 3s linear infinite;
+    transition: 0.1s ease linear;
+}
+.loader8::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    border-top: 100px solid white;
+    border-radius: 50%;
+    animation: loader8a 0.5s ease infinite;
+}
+.loader8::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    border-bottom: 100px solid white;
+    border-radius: 50%;
+    animation: loader8b 0.5s ease infinite;
 }
 
 
