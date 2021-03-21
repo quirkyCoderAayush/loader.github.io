@@ -289,10 +289,10 @@
 .loader6 .loader6inner{
     position: absolute;
     border: 4px solid transparent;
-    border-top-color: yellow;
-    border-bottom-color: yellow;
+    border-top-color: white;
+    border-bottom-color: white;
     border-radius: 50%;
-    box-shadow: 0 0 10px white, 0 0 20px cyan;
+    box-shadow: 0 0 20px blue, 0 0 40px blue;
 }
 @keyframes loader6a{
     0%{
