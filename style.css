@@ -431,8 +431,8 @@
     }
 }
 .loader8{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     animation: loader8 3s linear infinite;
     transition: 0.1s ease linear;
 }
