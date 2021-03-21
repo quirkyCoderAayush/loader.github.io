@@ -396,22 +396,22 @@
 
 @keyframes loader8{
     0%{
-        left: 30%;
+        left: 300px;
         transform: rotateY(0deg);
     }
     48%{
-        left: -30%;
+        left: -300px;
         transform: rotateY(0deg);
     }
     52%{
         transform: rotateY(180deg);
     }
     98%{
-        left: 30%;
+        left: 300px;
         transform: rotateY(180deg);
     }
     100%{
-        left: 30%;
+        left: 300px;
     }
 }
 @keyframes loader8a{
@@ -459,7 +459,117 @@
     animation: loader8b 0.5s ease infinite;
 }
 
+/*************Loader9 Styling**************/
 
+.parent:nth-child(9){
+    background-color: rgb(16, 41, 23);
+}
+@keyframes loader9{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes loader9b{
+    0%,100%{
+        background-color: red;
+    }
+    20%{
+        background-color: cyan;
+    }
+    40%{
+        background-color: yellow;
+    }
+    60%{
+        background-color: purple;
+    }
+    80%{
+        background-color: blue;
+    }
+}
+.loader9{
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+    border: 20px solid transparent;
+    border-radius: 50%;
+    border-top-color: black;
+    border-bottom-color: black;
+    animation: loader9 1s linear infinite;
+    box-shadow: 0 0 20px white, 0 0 40px blue;
+}
+.loader9::before{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: orange;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    animation: loader9b 6s ease infinite;
+}
+
+
+/*************Loader10 Styling**************/
+
+.parent:nth-child(10){
+    background-color: rgb(11, 47, 53);
+}
+@keyframes loader10{
+    0%{
+        transform: rotateY(0deg);
+    }
+    20%{
+        transform: rotateY(180deg);
+    }
+    40%{
+        transform: rotate(120deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    70%{
+        transform: rotateY(-180deg);
+    }
+    90%{
+        transform: rotate(-120deg);
+    }
+    100{
+        transform: rotate(0deg);
+    }
+}
+.loader10{
+    width: 200px;
+    height: 200px;
+    animation: loader10 3s linear infinite;
+}
+.loader10::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-bottom: 200px solid orange;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    animation: loader10bf 2s ease infinite;
+}
+.loader10::after{
+    position: absolute;
+    content: '';
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    bottom: 180px;
+    left: 75px;
+    border-radius: 50%;
+    animation: loader10af 2s ease infinite;
+}
 
 
 
