@@ -356,20 +356,20 @@
 }
 @keyframes loader7innera{
     0%,100%{
-        transform: scale(0);
-    }
-    50%{
         transform: scale(1);
         box-shadow: 0 0 20px red, 0 0 40px red;
+    }
+    50%{
+        transform: scale(0);
     }
 }
 @keyframes loader7innerb{
     0%,100%{
-        transform: scale(1);
+        transform: scale(0);
         box-shadow: 0 0 20px blue, 0 0 40px blue;
     }
     50%{
-        transform: scale(0); 
+        transform: scale(1); 
     }
 }
 .loader7inner:nth-child(1){
